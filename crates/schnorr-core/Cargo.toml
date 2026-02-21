@@ -1,0 +1,32 @@
+[package]
+name = "schnorr-core"
+version = "0.1.0"
+edition = "2021"
+description = "Schnorr signatures over BabyJubJub — core crypto primitives"
+
+[dependencies]
+# Elliptic curve arithmetic (arkworks 0.4)
+ark-ec          = "0.4"
+ark-ff          = "0.4"
+ark-std         = "0.4"
+ark-bn254       = "0.4"
+ark-ed-on-bn254 = "0.4"
+
+# Poseidon hash (circom-compatible)
+light-poseidon  = "0.2"
+
+# Message hashing
+sha2 = "0.10"
+
+# Big integer for field conversions
+num-bigint = "0.4"
+
+# Serialization
+serde       = { version = "1", features = ["derive"] }
+serde_json  = "1"
+
+# Randomness
+rand = "0.8"
+
+[dev-dependencies]
+ark-relations = "0.4"

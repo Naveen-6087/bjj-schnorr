@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "crates/schnorr-core",
+    "crates/schnorr-witness",
+    "crates/schnorr-cli",
+]
+resolver = "2"

@@ -1,0 +1,30 @@
+# Rust
+target/
+/tmp/bjj-schnorr-target/
+Cargo.lock
+
+# Node
+node_modules/
+package-lock.json
+
+# Build artifacts (large binaries — regenerate via scripts/setup.sh)
+build/*.zkey
+build/*.r1cs
+build/*.sym
+build/*.ptau
+build/*.wtns
+build/schnorr_js/*.wasm
+
+# Keep these for reference
+# build/verification_key.json
+# build/proof.json
+# build/public.json
+# build/input.json
+
+# Sensitive / generated key material
+keys.json
+sig.json
+
+# OS
+.DS_Store
+Thumbs.db
