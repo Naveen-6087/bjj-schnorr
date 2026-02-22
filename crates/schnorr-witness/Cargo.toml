@@ -1,0 +1,15 @@
+[package]
+name = "schnorr-witness"
+version = "0.1.0"
+edition = "2021"
+description = "Witness generation for Schnorr-BabyJubJub Circom circuits"
+
+[dependencies]
+schnorr-core = { path = "../schnorr-core" }
+
+ark-ff          = "0.4"
+ark-bn254       = "0.4"
+ark-ed-on-bn254 = "0.4"
+num-bigint      = "0.4"
+serde_json      = "1"
+serde           = { version = "1", features = ["derive"] }
